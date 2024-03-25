@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Files</title>
+    <style>
+        /* Basic styling for demonstration purposes */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 10;
+            padding: 10;
+        }
+.navigation a:link{
+    color:white;
+    padding: 10px;
+    margin: 10px;
+      border-radius: 15px;
+
+}
+.navigation a:visited{
+    color:white;
+     padding: 10px;
+     margin: 10px;
+       border-radius: 15px;
+}
+.navigation a:hover{
+    bcolor:white;
+     padding: 10px;
+     margin: 10px;
+     border-radius: 15px;
+}
+ .navigation a:active{
+    color:white;
+     padding: 10px;
+     margin: 10px;
+       border-radius: 15px;
+}
+        .container {
+            display: flex;
+            align-items: flex-start;
+        }
+    
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: black;
+            border-bottom: 1px solid red;
+        }
+        .logo {
+            width: 60px; /* Adjust logo size */
+            height: auto;
+        }
+        .navigation {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align:none;
+            flex-grow: 2; 
+        }
+        .navigation li {
+            display: inline-block;
+            margin-right: 10px;
+            padding: 10px;
+        }
+        .navigation li:last-child {
+            margin-right: 0;
+        }
+        .navigation li a {
+            text-decoration: none;
+            color: #333;
+        }
+        .p1{
+            font-family: Elephant;
+            font-weight: bold;
+            font-size: 20px;
+        }
+       
+    </style>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="header">
+     <img src="./image/MP3 logo.PNG" width="200" height="50" alt="Logo">
+    <ul class="navigation">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="dropdown">
+                <a href="#">Parameter</a>
+                <div class="dropdown-contents">
+                    <!-- Links inside the dropdown menu -->
+                    <a href="audios.html">Audio</a>
+                    <a href="videos.html">Video</a>
+
+        
+        
+    </div>
+</li>
+    </ul>
+</div>
+ <div>  <section>
+            <audio controls>
+                <source src="./musics/Bushali-Nituebu- ft-SlumDrip-B-Threy.mp3" type="audio/mpeg">
+                Your browser does not support the audio element
+            </audio>
+            <p>Bushali-Nituebu- ft-SlumDrip-B-Threy</p>
+            <br>
+            <button onclick="previousAudio()">Previous</button><br>
+            <button onclick="togglePlayPause()">Play/Pause</button><br>
+            <button onclick="nextAudio()">Next</button><br>
+            <div>
+                <a href="#comments">&#128172; Comments</a>
+                <a href="#like">&#128077; Like</a>
+                <a href="#dislike">&#128078; Dislike</a>
+                <a href="#subscribers">&#128100; Subscribers</a>
+            </div>
+
+            </section>
+
+            <section>
+            
+
+    <audio controls>
+            <source src="./musics/Kivumbi King-Wait-ft-Axon.mp3" type="audio/mpeg">
+                Your browser does not support the audio element
+            </audio>
+        <p>Kivumbi King-Wait-ft-Axon</p><br><br><br>
+        
+   
+
+    <audio controls>
+            <source src="./musics/KOMEZA_ INTAMBWE _ZANJYE - Catholic All Stars_ (Official Video) _Composed by Fr. Théodose_ MWITEGERE_F_Joeam2MwA.mp3" type="audio/mpeg">
+
+                Your browser does not support the audio element
+            </audio>
+        <p>KOMEZA_ INTAMBWE _ZANJYE - Catholic All Stars_ (Official Video) _Composed by Fr. Théodose_ MWITEGERE_F_Joeam2MwA</p><br><br><br>
+        
+
+    <audio controls>
+            <source src="./musics/NI WOWE_ RUTARE_ RWANJYE -Emmy Pro_ ft Catholic All Stars_ (Official Video) Comp_ by Father Dr Fabien_c3EOtu8XhUY.mp3" type="audio/mpeg">
+
+                Your browser does not support the audio element
+            </audio>
+        <p>NI WOWE_ RUTARE_ RWANJYE -Emmy Pro_ ft Catholic All Stars_ (Official Video) Comp_ by Father Dr Fabien_c3EOtu8XhUY</p><br><br><br>
+        
+   
+    <audio controls>
+            <source src="./musics/Fernando-Bellissima-(We Love Muzika).mp3" type="audio/mpeg">
+
+                Your browser does not support the audio element
+            </audio>
+        <p>Fernando-Bellissima-(We Love Muzika)</p><br><br><br>
+   
+
+         <audio controls>
+            <source src="./musics/Diamond-Platnumz-The One.mp3" type="audio/mpeg">
+                Your browser does not support the audio element
+            </audio><br
+        <caption>Diamond-Platnumz-The One </caption><br><br>
+
+        </section>
+    
+<div><footer style="background-color:skyblue;text-align: center;width:100%;height:auto; color: white;font-size: 20px;"><p>UR CBE B BIT &copy; 2024 &reg; This website displays videos</p></footer></div>
+
+<script>
+    var audios = [
+       "./musics/KOMEZA_ INTAMBWE _ZANJYE - Catholic All Stars_ (Official Video) _Composed by Fr. Théodose_ MWITEGERE_F_Joeam2MwA.mp3",
+        "./musics/NI WOWE_ RUTARE_ RWANJYE -Emmy Pro_ ft Catholic All Stars_ (Official Video) Comp_ by Father Dr Fabien_c3EOtu8XhUY.mp3",
+        "./musics/Bushali-Nituebu- ft-SlumDrip-B-Threy.mp3",
+        "./musics/Fernando-Bellissima-(We Love Muzika).mp3",
+        "./musics/Kivumbi King-Wait-ft-Axon.mp3",
+        "./musics/Diamond-Platnumz-The One.mp3",
+    ];
+
+    var currentAudioIndex = 0;
+    var audioPlayer = document.querySelector('audio');
+
+    function togglePlayPause() {
+        if (audioPlayer.paused) {
+            audioPlayer.play();
+        } else {
+            audioPlayer.pause();
+        }
+    }
+
+    function nextAudio() {
+        currentAudioIndex = (currentAudioIndex + 1) % audios.length;
+        audioPlayer.src = audios[currentAudioIndex];
+        audioPlayer.play();
+    }
+
+    function previousAudio() {
+        currentAudioIndex = (currentAudioIndex - 1 + audios.length) % audios.length;
+        audioPlayer.src = audios[currentAudioIndex];
+        audioPlayer.play();
+    }
+</script>
+
+</body>
+</html>
